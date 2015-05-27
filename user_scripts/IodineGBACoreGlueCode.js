@@ -16,7 +16,10 @@
  *
  */
 var games = {
-    "sonic_advance":"Sonic Advance"
+    "sonic_advance":"Sonic Advance",
+    "pokemon_emerald" : "Pokemon Emerald",
+    "pokemon_firered" : "Pokemon Fire Red",
+    "mario_kart" : "Mario Kart"
 };
 
 var Iodine = null;
