@@ -15,8 +15,9 @@ Due to lates virtual-host update the express apps are no longer being
 started individually - they are all exported as express applications and
 loaded in vhost process
 */
-app.listen(8080, function(){
-    console.log("Server running")
+var port = process.env.PORT || 3000;
+app.listen(port, function(){
+    console.log("Server running on port " + port);
 })
 
 //module.exports = app;
