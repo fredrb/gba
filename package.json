@@ -4,5 +4,10 @@
   "dependencies": {
     "express": "^4.12.4",
     "jade": "^1.10.0"
-  }
+},
+    "scripts" : {
+        "start" : "nodemon server.js",
+        "server-start" : "pm2 start server.js",
+        "prepare" : "
+    }
 }
