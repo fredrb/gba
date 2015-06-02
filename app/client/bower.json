@@ -1,0 +1,7 @@
+{
+  "name": "server-gba-client",
+  "private": true,
+  "dependencies": {
+    "skeleton-css": "~2.0.4"
+  }
+}

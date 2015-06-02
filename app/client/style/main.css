@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Raleway);
+
+html {
+    font-family:'Raleway',Arial,'Droid Sans';
+}
+
+#gba_header {
+    font : Tahoma;
+    text-align: center;
+    color : gray;
+}
+
+#gba_title {
+    width: 80%;
+    margin-left : 10%;
+    border-bottom: 1px gray solid;
+    margin-bottom: 10px;
+}
+
+#available_roms { margin : 20px; }
+
+#available_roms ul {
+    list-style: none;
+}
+
+#available_roms table {
+    font-size: 18px;
+    width: 50%;
+    margin-left : 25%;
+}
+
+#properties table td { text-align: center}
+
+#properties table{
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    font-size : 12px;
+}
+
+#add_roms input, button {
+    margin : 7px;
+}

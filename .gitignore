@@ -1,0 +1,3 @@
+node_modules/
+app/client/bower_components
+app/gba/resource/games/*

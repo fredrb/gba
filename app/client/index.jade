@@ -1,0 +1,66 @@
+html
+    head
+        style
+            include bower_components/skeleton-css/css/normalize.css
+            include bower_components/skeleton-css/css/skeleton.css
+            include style/main.css
+    body
+        div.container
+            div.column#gba_header
+                div#gba_title
+                    h1 GBA Emulator
+                div#available_roms
+                    h2 Games
+                    input(type='text' id='in_search' value='Search')
+                    table
+                        each game in roms
+                            tr    
+                                td(style='text-align : center') #{game.name}
+                                td(style='text-align : center')
+                                    a(href=game.path) Play
+                div#properties
+                    label Sound 
+                        input(type='checkbox' id='sound' checked)
+                        label Speed 
+                            input(readonly type='text' value='100%' id='speed')
+                    label Controls
+                        table 
+                            tr
+                                td Button A 
+                                td 
+                                    input(readonly type='text' value='z')
+                                td Button B 
+                                td 
+                                    input(readonly type='text' value='x')
+                            tr    
+                                td Button Up 
+                                td 
+                                    input(readonly type='text' value='key-up')
+                                td Button Down 
+                                td 
+                                    input(readonly type='text' value='key-down')
+                            tr    
+                                td Button Select
+                                td 
+                                    input(readonly type='text' value='space')
+                                td Button Starts
+                                td 
+                                    input(readonly type='text' value='enter')
+                            tr
+                                td Button Left
+                                td 
+                                    input(readonly type='text' value='key-left')
+                                td Button Right
+                                td    
+                                    input(readonly type='text' value='key-right')
+                            tr
+                                td Volume Down
+                                td 
+                                    input(readonly type='text' value='d')
+                                td Volume Up
+                                td    
+                                    input(readonly type='text' value='r')
+                div#add_roms
+                    input(type='text' id='in_rom_name' value='Rom Name' ) 
+                    input(type='text' id='in_rom_path' value='Path' )
+                    button Add
