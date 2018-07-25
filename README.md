@@ -8,5 +8,3 @@ I removed the ROMS and the BIOS for size purposes, if you want to download and t
 fodler in the root of this application and the BIOS in `resources`
 
 You can create your own configuration under `user_scripts`
-
-[Live demo](http://gba.atcore.co)
